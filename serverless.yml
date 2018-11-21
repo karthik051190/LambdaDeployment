@@ -4,6 +4,7 @@ service: serverless-application-framework-backend
 provider:
   name: aws
   runtime: nodejs6.10
+  region: us-east-1
   versionFunctions: false
   deploymentBucket: ${ssm:SLSBucketName}
   #stage: ${opt:stage, 'dev'}
