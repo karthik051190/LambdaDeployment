@@ -41,7 +41,7 @@ phases:
         #- aws s3 cp dist s3://${S3_BUCKET} --recursive 
         #- aws s3 rm s3://front-end-2018-karthik --recursive
         - echo Build completed on `date`
-        - sls logs
+        - sls logs -f info_kiosk_welcome
 
 artifacts:
     files:
